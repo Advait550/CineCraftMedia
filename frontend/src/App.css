@@ -1,0 +1,40 @@
+.lxl-app-root {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: var(--swatch--dark);
+  color: var(--swatch--light);
+  overflow-x: clip;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatSquiggle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(2deg);
+  }
+}
+
+.hero-giant-svg {
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.4));
+  transition: transform 0.4s ease;
+}
+
+.service-card-item:hover .card-arrow-circle {
+  transform: translateX(4px);
+  background-color: var(--swatch--brand) !important;
+  color: #ffffff !important;
+}
